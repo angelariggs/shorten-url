@@ -1,0 +1,8 @@
+extends layout
+
+block content
+    h3 Short Link: 
+      a(href="http://"+url.target)= url.shortened
+      div
+        p= url.target
+        p= url.clicks
